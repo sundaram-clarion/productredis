@@ -12,3 +12,5 @@
 */
 
 Route::get('/categories', 'CategoryController@index');
+
+Route::get('/process-order', 'HomeController@processOrder');
