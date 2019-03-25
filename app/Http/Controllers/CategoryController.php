@@ -16,10 +16,10 @@ class CategoryController extends Controller
      */
     public function index()
     {
-	$categories = Cache::remember('categories', 60, function () {
-	    return Category::all();
-	});
-	return $categories;
+        $categories = Cache::remember('categories', 60, function () {
+            return Category::all();
+        });
+        return $categories;
     }
 
     /**
