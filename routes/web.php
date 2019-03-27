@@ -14,3 +14,5 @@
 Route::get('/categories', 'CategoryController@index');
 
 Route::get('/process-order', 'HomeController@processOrder');
+
+Route::get('/add-comments', 'HomeController@comments');
